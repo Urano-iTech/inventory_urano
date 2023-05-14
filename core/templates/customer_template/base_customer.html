@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- swiperjs cdn link -->
+    <link rel="stylesheet" href="{% static '/customer/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/customer/css/style.scss' %}">
+    <link rel="stylesheet" href="{% static 'https://unpkg.com/swiper@7/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css2-family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Poppins:wght@400;500;700&display=swap' %}">
+	
+   
+   
+
+    
+    <title>{% block title %} {% endblock title %}</title>
+  </head>
+  <body>
+    {% block page_title %}  {% endblock page_title %}
+    {% block page_content %} 
+    {% endblock page_content %}
+
+    <!-- footer section starts -->
+    <footer class="spacer10">
+      <div class="container row jc-between flexcol-s ta-center-s">
+        <div class="row flexcol spacebottom3-s">
+          <a href="#home" class="size2 bold white"
+            >Urano<span class="lightpurple">iTech</span></a
+          >
+          <p class="size2 halfwhite spacetop2">
+            La Mejor website para Obtener<br />todo en 1 para tu negocio, sitiendo la experiencia<br />en proyectar servicios
+          </p>
+        </div>
+        <div class="row flexcol spacebottom3-s">
+          <a href="#about" class="bold size2 white">About</a>
+          <a href="#" class="size2 halfwhite spacetop2">Productos</a>
+          <a href="#" class="size2 halfwhite spacetop2">Recursos</a>
+          <a href="#" class="size2 halfwhite spacetop2">Term & Condition</a>
+          <a href="#" class="size2 halfwhite spacetop2">FAQ</a>
+          
+        </div>
+        <div class="row flexcol spacebottom3-s">
+          <a href="#" class="bold size2 white">Compañia</a>
+          <a href="#" class="size2 halfwhite spacetop2">Nuestro Team</a>
+          <a href="#" class="size2 halfwhite spacetop2">Partner With Us</a>
+          <a href="#" class="size2 halfwhite spacetop2">Privacy & Policy</a>
+          <a href="#" class="size2 halfwhite spacetop2">Features</a>
+        </div>
+        <div class="row flexcol spacebottom3-s">
+          <h5 class="bold size2">Contact</h5>
+          <a href="#" class="size2 halfwhite spacetop2">+58-4245588898</a>
+          <a href="#" class="size2 halfwhite spacetop2"
+            >gg.20twenty1@gmail.com</a
+          >
+          <div class="row jc-between spacetop2 jc-evenly-s">
+            <a href="#" class="fab fa-youtube size2 halfwhite spacetop2"></a>
+            <a href="#" class="fab fa-discord size2 halfwhite spacetop2"></a>
+            <a href="#" class="fab fa-instagram size2 halfwhite spacetop2"></a>
+          </div>
+        </div>
+      </div>
+      <p class="size2 halfwhite spacetop5 ta-center">CG <span class="white bold">@Urano iTech Group</span> <br/>| 2023 All Right Reserved!</p>
+    </footer>
+    <!-- footer section ends -->
+    <script src="{% static 'https://unpkg.com/swiper@7/swiper-bundle.min.js' %}"></script>
+    <!-- custom js file link -->
+    <script src="{% static 'customer/js/script.js' %}"
+    
+  </body>
+</html>

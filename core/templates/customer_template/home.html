@@ -1,0 +1,61 @@
+{% extends 'customer_template/base_customer.html' %}
+{% if user.is_authenticate and CustomerUser %}{% endif %} 
+{% block page_title %}  {% endblock page_title %} 
+{% block page_content %}
+
+<header class="header bg-white10">
+  <div class="container">
+    <a href="#" class="logo bold white"
+      >Urano<span class="lightpurple">iTech</span></a
+    >
+    <div class="menu">
+     
+      <a href="#about">About Us</a>
+      <a href="#Services">Services</a>
+      <a href="#Register">Register</a>
+      
+    </div>
+  </div>
+</header>
+
+<section id="home" class="spacetop15 spacebottom10">
+  <div class="container">
+    <div class="row jc-between ai-center col-reverse-s">
+      <div class="col5 col6-md col12-s ta-center-s">
+        <h1 class="size5 bold spacebottom1">
+          Crear, Vender & Rankear en <br/> Generación de Servicios
+        </h1>
+        <p class="size2 spacebottom3 halfwhite">
+          Estammos para brindarles a nuestros aliadosy clientes en ela mejor asistencia del se Servicio
+        </p>
+
+        <div
+          class="row col8 col9-md jc-between spacebottom4 jc-evenly-s col12-s"
+        >
+          
+          <a class="btn bg-white10 size2 white" href="#">Ejecutivos</a>
+        </div>
+
+        <div class="row jc-between">
+          <div class="ta-center">
+            <p class="size3 bold">200+</p>
+            <p class="size2 halfwhite">Productos</p>
+          </div>
+          <div class="ta-center">
+            <p class="size3 bold">30+</p>
+            <p class="size2 halfwhite">Marcas</p>
+          </div>
+          <div class="ta-center">
+            <p class="size3 bold">30+</p>
+            <p class="size2 halfwhite">Agentes</p>
+          </div>
+        </div>
+      </div>
+      <div class="col6 col12-s spacebottom3-s">
+        <img src="static/customer/img/heroimage.png" alt="" class="img-responsive float" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock page_content %}
