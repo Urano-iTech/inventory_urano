@@ -13,7 +13,7 @@ django-celery-beat==2.1.0
 django-countries==7.2.1
 django-crispy-forms==1.13.0
 django-decouple==2.1
-sqlparse==0.4.2
+sqlparse==0.4.4
 bootstrap4==0.1.0
 django-filter==21.1
 django-allauth==0.51.0
